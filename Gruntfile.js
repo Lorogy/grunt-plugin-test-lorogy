@@ -34,7 +34,7 @@ module.exports = function (grunt) {
     // Configuration to be run (and then tested).
     _1: {
       options:{
-        who:'task2',
+        who:'task1',
         commentSymbol:'//'
       },
       dist:['test/fixtures/*.js']

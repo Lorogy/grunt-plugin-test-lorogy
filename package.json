@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "self-created grunt plugin,by enviroment  only",
   "repository": "https://github.com/Lorogy/grunt-plugin-test-lorogy.git",
+  "homepage":"https://lorogy.github.io/grunt-plugin-test-lorogy/",
   "author": {
     "name": "lorogy",
     "email": "18811395953@163.com"

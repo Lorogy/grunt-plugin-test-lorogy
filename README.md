@@ -37,47 +37,31 @@ grunt.initConfig({
 
 ### Options
 
-#### options.separator
+#### options.who 
 Type: `String`
-Default value: `',  '`
+Default value: `task1`
 
-A string value that is used to do something with whatever.
+指明哪一个来放在js代码前
 
-#### options.punctuation
+#### options.commentSymbol
 Type: `String`
-Default value: `'.'`
+Default value: `//`
 
-A string value that is used to do something else with whatever else.
+指明拼接到js代码中使用的注释符
 
 ### Usage Examples
 
 #### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
-
-```js
-grunt.initConfig({
-  _1: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-})
-```
-
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
+In this example, the default options are used to do something with whatever. 
 
 ```js
 grunt.initConfig({
   _1: {
     options: {
-      separator: ': ',
-      punctuation: ' !!!',
+    'who':'task1',
+    'commentSymbol':'//'
     },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
+    dist:['example/*.js']
   },
 })
 ```
@@ -86,7 +70,7 @@ grunt.initConfig({
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
+2017-8-11&&nbsp;&nbsp;&nbsp;&nbsp;v0.0.1&nbsp;&nbsp;&nbsp;&nbsp;init
 
 ## License
 Copyright (c) 2017 lorogy. Licensed under the MIT license.
