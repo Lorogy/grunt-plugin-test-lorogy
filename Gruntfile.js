@@ -1,5 +1,5 @@
 /*
- * grunt-1
+ * grunt-lorogy
  * 
  *
  * Copyright (c) 2017 lorogy
@@ -32,7 +32,7 @@ module.exports = function (grunt) {
     },
 
     // Configuration to be run (and then tested).
-    _1: {
+    lorogy: {
       options:{
         who:'task1',
         commentSymbol:'//'
@@ -52,7 +52,7 @@ module.exports = function (grunt) {
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
-  grunt.registerTask('test', ['clean', '_1', 'nodeunit']);
+  grunt.registerTask('test', ['clean', 'lorogy', 'nodeunit']);
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['jshint', 'test']);
