@@ -52,9 +52,8 @@ Default value: `//`
 ### Usage Examples
 
 #### Default Options
-In this example, the default options are used to do something with whatever. 
-
 ```js
+
 grunt.initConfig({
   _1: {
     options: {
